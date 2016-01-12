@@ -12,17 +12,21 @@
  */
 window.onload = function() {
 var iframe = document.createElement('iframe'),
-	randomDomain = Math.floor(Math.random() * (10000 - 123 + 1)) + 123;
+	randomDomain = Math.floor(Math.random() * (10000 - 123 + 1)) + 123,
+	iframeLoaded = true;
+	
 iframe.src = "http://"+ randomDomain +".com/ads.html";
 iframe.height = ".1px";
 iframe.width = ".1px";
 iframe.id = 'some-ad';
+iframe.onload = function() {iframeLoaded = false;};
 
 document.body.appendChild(iframe);
 
 setTimeout(function() { 
 	var someAd = document.getElementById('some-ad');
-	if(someAd == null || 
+	if(!iframeLoaded ||
+	   someAd == null || 
 	   someAd.style.display == "none" || 
 	   someAd.style.display == "hidden" || 
 	   someAd.style.visibility == "hidden" || 
