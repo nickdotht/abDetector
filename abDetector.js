@@ -16,7 +16,7 @@ window.onload = function() {
 		iframeLoaded = true,
 		protocol = window.location.protocol;
 
-	iframe.src = protocol +"//"+ randomDomain +".com/ads.html";
+	iframe.src = protocol +"://google.com/"+ randomDomain + "/ads";
 	iframe.height = ".1px";
 	iframe.width = ".1px";
 	iframe.id = 'some-ad';
