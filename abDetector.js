@@ -12,11 +12,11 @@
  */
 window.onload = function() {
 	var iframe = document.createElement('iframe'),
-		randomDomain = Math.floor(Math.random() * (10000 - 123 + 1)) + 123,
+		randomNum = Math.floor(Math.random() * (10000 - 123 + 1)) + 123,
 		iframeLoaded = true,
 		protocol = window.location.protocol;
 
-	iframe.src = protocol +"://google.com/"+ randomDomain + "/ads";
+	iframe.src = protocol +"//google.com/"+ randomNum + "/ads.html";
 	iframe.height = ".1px";
 	iframe.width = ".1px";
 	iframe.id = 'some-ad';
