@@ -1,6 +1,0 @@
-{
-  "name": "Abdetector",
-  "tagline": "Vanilla JavaScript AdBlock Detector.",
-  "body": "# Adblock Detector :no_entry:\r\nSimple vanilla JavaScript AdBlock Detector.\r\n\r\n[Try it out](http://nick.comlu.com/ab/)\r\n\r\n### How to use it\r\n\r\n  - Download/Clone the project, upload the file `abDetector.min.js`  \r\n  - Put this in your `<head>`:\r\n    - `<script type=\"text/javascript\" src=\"abDetector.min.js\"></script>`\r\n  - Use this wherever you want to display a message to AdBlock users:\r\n    - `<div id=\"ab-message\" style=\"display: none\">Your message here!</div>`\r\n    \r\nYou're done!\r\n\r\n### Notes\r\n- If you really hate inline styles, you can still style the message in your CSS file.\r\n- Since it's an element just like any other elements, you can do whatever you want with it (i.e. popups, images…)\r\n\r\nThanks for using my script. If you found any bugs or you think something's wrong, please, file an issue or even better, send me a pull request. I'll be more than happy to check it out.\r\n\r\nEnjoy.",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
