@@ -35,5 +35,4 @@ window.onload = function() {
 	    	document.getElementById('ab-message').style.display = 'block';
 	    someAd.remove();
 	}, 500);
-	console.log("test");
 };
