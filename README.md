@@ -1,7 +1,8 @@
 # Adblock Detector :no_entry:
 Simple vanilla JavaScript AdBlock Detector.
 
-[Try it out](http://nick.comlu.com/ab/)
+### Demo
+[Click here](http://r4meau.github.io/abDetector/) to try it out. Turn on/off your ad blocker and refresh.
 
 ### How to use it
 
@@ -15,8 +16,10 @@ You're done!
 
 ### Notes
 - If you really hate inline styles, you can still style the message in your CSS file.
-- Since it's an element just like any other elements, you can do whatever you want with it (i.e. popups, images…)
+- Since it's an element just like any other elements, you can show whatever you want with it (i.e. popups, images…)
 
-Thanks for using my script. If you found any bugs or you think something's wrong, please, file an issue or even better, send me a pull request. I'll be more than happy to check it out.
+Thanks for using my script. If you found any bugs or you think something's wrong, please, [file an issue](https://github.com/R4meau/abDetector/issues) or even better, send me a pull request. I'll be more than happy to check it out.
+
+Don't forget to [keep in touch](https://twitter.com/r4meau) :)
 
 Enjoy.
