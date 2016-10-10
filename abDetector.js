@@ -67,7 +67,7 @@ window.onload = function() {
 *
 */
 function getRequest (iframe, success, error) {
-	var xhr = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+	var xhr = new XMLHttpRequest();
 	xhr.open("GET", iframe.src);
 	xhr.onreadystatechange = function(){
 		if (xhr.readyState == 4)
