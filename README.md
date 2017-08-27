@@ -22,4 +22,8 @@ Thanks for using my script. If you found any bugs or you think something's wrong
 
 Don't forget to [keep in touch](https://twitter.com/r4meau) :)
 
+## Sponsors
+
+<a href="https://app.codesponsor.io/link/Fo4iMpT8bBWXwb54Lj7DPwqL/R4meau/abDetector" rel="nofollow"><img src="https://app.codesponsor.io/embed/Fo4iMpT8bBWXwb54Lj7DPwqL/R4meau/abDetector.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+
 Enjoy.
