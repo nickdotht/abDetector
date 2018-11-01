@@ -10,10 +10,10 @@
  *
  *
  */
-window.onload = function() {
-	var iframe = document.createElement('iframe'),
-		randomNum = Math.floor(Math.random() * (10000 - 123 + 1)) + 123,
-		protocol = window.location.protocol;
+window.onload = () => {
+	const iframe = document.createElement('iframe');
+	const randomNum = Math.floor(Math.random() * (10000 - 123 + 1)) + 123;
+	const protocol = window.location.protocol;
 
 	/*
 	*
@@ -21,7 +21,7 @@ window.onload = function() {
 	* an id and gives it the minimum size
 	*
 	*/
-	iframe.src = protocol +"//google.com/"+ randomNum +"/ads.html";
+	iframe.src = `${protocol}//google.com/${randomNum}/ads.html`;
 	iframe.height = ".1px";
 	iframe.width = ".1px";
 	iframe.id = 'some-ad';
@@ -32,11 +32,11 @@ window.onload = function() {
 	* or the request got aborted due to some error inside the iframe (404)
 	*
 	*/
-	getRequest(iframe, function (response) { // On Success
+	getRequest(iframe, response => { // On Success
 		document.body.appendChild(iframe);
-	}, function (xhr, status) { // On error
+	}, (xhr, status) => { // On error
 		if (status === 0) // Request aborted
-	  		document.body.appendChild(iframe);
+			document.body.appendChild(iframe);
 	});
 
 	/*
@@ -46,13 +46,13 @@ window.onload = function() {
 	* Runs some tests to know if it's being hidden or not
 	*
 	*/
-	setTimeout(function() {
-		var someAd = document.getElementById('some-ad');
-		if(someAd === null ||
-		someAd.style.display == "none" ||
-		someAd.style.display == "hidden" ||
-		someAd.style.visibility == "hidden" ||
-		someAd.offsetHeight === 0)
+	setTimeout(() => {
+		const someAd = document.getElementById('some-ad');
+		if (someAd === null ||
+			someAd.style.display == "none" ||
+			someAd.style.display == "hidden" ||
+			someAd.style.visibility == "hidden" ||
+			someAd.offsetHeight === 0)
 			document.getElementById('ab-message').style.display = 'block';
 		else
 			someAd.remove();
@@ -66,10 +66,10 @@ window.onload = function() {
 * and calls them respectively
 *
 */
-function getRequest (iframe, success, error) {
-	var xhr = new XMLHttpRequest();
+function getRequest(iframe, success, error) {
+	const xhr = new XMLHttpRequest();
 	xhr.open("GET", iframe.src);
-	xhr.onreadystatechange = function(){
+	xhr.onreadystatechange = () => {
 		if (xhr.readyState == 4)
 			if (xhr.status == 200) // Loaded successfully
 				success(xhr.responseText);
